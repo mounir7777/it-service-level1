@@ -1,0 +1,9 @@
+{
+  "name": "IT Service Level1",
+  "short_name": "ITSL1",
+  "start_url": "/de/index.html",
+  "display": "standalone",
+  "background_color": "#f8f9fa",
+  "theme_color": "#007BFF",
+  "icons": []
+}

@@ -1,0 +1,8 @@
+:root{--bg:#f8f9fa;--card:#fff;--text:#0f172a;--muted:#475569;--primary:#007BFF;--border:#e5e7eb}
+*{box-sizing:border-box}html,body{margin:0;padding:0}
+body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+.site-header,.site-footer{padding:16px;border-bottom:1px solid var(--border);background:#fff}
+.site-footer{border-top:1px solid var(--border);border-bottom:none;margin-top:40px;text-align:center;color:var(--muted)}
+.lang-switch a{text-decoration:none}
+main{max-width:1100px;margin:24px auto;padding:0 16px}
+/* TODO: Add components and responsive rules */
