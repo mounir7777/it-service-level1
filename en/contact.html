@@ -3,22 +3,68 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title><!-- TODO: Title (EN) --></title>
-  <meta name="description" content="<!-- TODO: Meta description (EN) -->">
+  <title>Contact | IT Service Level1</title>
+  <meta name="description" content="Contact IT Service Level1: IT support & cyber security in Hamburg. Tell us briefly what you need — we’ll get back to you shortly.">
   <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="alternate" href="/de/index.html" hreflang="de">
+  <link rel="alternate" href="/de/kontakt.html" hreflang="de">
 </head>
 <body>
   <header class="site-header">
-    <!-- TODO: Logo / Navigation (EN) -->
-    <nav class="lang-switch"><a href="/de/index.html">🇩🇪 Deutsch</a></nav>
+    <nav>
+      <a href="/en/index.html" class="logo">IT Service Level1</a>
+      <ul>
+        <li><a href="/en/services.html">Services</a></li>
+        <li><a href="/en/about.html">About</a></li>
+        <li><a href="/en/contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="lang-switch"><a href="/de/kontakt.html">🇩🇪 Deutsch</a></div>
+    </nav>
   </header>
+
   <main>
-    <!-- TODO: Content (EN) -->
+    <section class="page-hero">
+      <h1>Contact</h1>
+      <p>Tell us briefly what you need — we’ll get back to you shortly.</p>
+    </section>
+
+    <section class="contact">
+      <form id="contactForm" action="/mailer.php" method="POST" novalidate>
+        <div class="form-row">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Your email</label>
+          <input type="email" id="email" name="email" placeholder="name@company.com" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Your message</label>
+          <textarea id="message" name="message" placeholder="Describe your request …" rows="6" required></textarea>
+        </div>
+
+        <!-- Honeypot (anti-spam) -->
+        <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute; left:-9999px;">
+
+        <button type="submit" class="btn">Send message</button>
+        <p id="formStatus" class="status"></p>
+      </form>
+    </section>
+
+    <section class="box" style="max-width:780px;margin:24px auto;padding:16px;">
+      <h2>IT Service Level1</h2>
+      <p>Hamburg, Germany</p>
+      <p><strong>Email:</strong> info@it-services-level-1.de</p>
+    </section>
   </main>
+
   <footer class="site-footer">
-    <!-- TODO: Footer (EN) -->
+    <p>© 2025 IT Service Level1 | Hamburg, Germany</p>
+    <nav>
+      <a href="/en/imprint.html">Imprint</a> |
+      <a href="/en/privacy.html">Privacy</a>
+    </nav>
   </footer>
+
   <script src="/assets/js/script.js"></script>
 </body>
 </html>
