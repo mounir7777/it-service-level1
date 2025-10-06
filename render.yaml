@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: it-service-level1
+    env: docker
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: info@it-services-level-1.de
+        sync: false
+      - key: HM1978.@Email007
+        sync: false
